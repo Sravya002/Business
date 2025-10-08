@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Small Business</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+            color: white;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* About section */
+        .about, .services, .contact {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .about h2, .services h2, .contact h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #4CAF50;
+        }
+        .about p, .services p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Services */
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .service-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact form */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ABC Small Business</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to ABC Small Business</h2>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>ABC Small Business has been providing high-quality services to our customers for over 10 years. Our mission is to make your life easier with our trusted solutions.</p>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>Service 1</h3>
+                <p>High-quality service to meet your needs.</p>
+            </div>
+            <div class="service-box">
+                <h3>Service 2</h3>
+                <p>Reliable and affordable solutions for everyone.</p>
+            </div>
+            <div class="service-box">
+                <h3>Service 3</h3>
+                <p>Professional approach with guaranteed results.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ABC Small Business. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
